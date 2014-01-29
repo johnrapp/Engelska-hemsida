@@ -7,8 +7,8 @@ app.config(function($routeProvider) {
 	.when('/about', {
 		templateUrl: 'templates/about.html'
 	})
-	.when('/QA', {
-		templateUrl: 'templates/QA.html'
+	.when('/FAQ', {
+		templateUrl: 'templates/FAQ.html'
 	})
 	.otherwise({
 		redirectTo: '/'

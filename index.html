@@ -6,31 +6,38 @@
 	<script type="text/javascript" src="lib/angular-route.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
 	<script type="text/ng-template" id="templates/about.html">
-		
+		ABOUT
 	</script>
-	<script type="text/ng-template" id="templates/QA.html">
-		
+	<script type="text/ng-template" id="templates/FAQ.html">
+		FAQ
 	</script>
 	<script type="text/ng-template" id="templates/start.html">
-	<div>
-	<h1>Introduction
-	</h1>
-	Today technology is a massive part of our everyday life.
-	 Just look around when you're on the bus, you'll definitely see
-	  the majority of the people staring down on their phones or tablets. 
-	  Because of this, people are going to have a greater knowledge about 
-	  technology and we'll be able to take advantage of that in many different ways. 
-	  One of the biggest positives about the progress of technology is that we’re going to 
-	  be able to take advantage of that within education and the school in general in the future. 
-	  This site is about the good possibilities and possible dangerous consequences of future technology. </div>
+	<div>Today technology is a massive part of our everyday life. Just look around 
+	when you're on the bus, you'll defenitely see the majority of the people 
+	staring down on their phones or tablets. Because of this, people are going 
+	to have a greater knowledge about technology and we'll be able to take 
+	advantage of that in many different ways. One of the biggest positives 
+	about this is that it can be used in education.'</div>
 	</script>
 
 </head>
 <body>
 	<header>
 		<h1>Education in the future</h1>
-
 	</header>
+	<nav>
+		<ul class="vanilla">
+			<a href="#/start" class="vanilla">
+				<li>Start</li>
+			</a>
+			<a href="#/FAQ" class="vanilla">
+				<li>FAQ</li>
+			</a>
+			<a href="#/about" class="vanilla">
+				<li>About</li>
+			</a>
+		</ul>
+	</nav>
 	<div id="container">
 		<div ng-view></div>
 	</div>
