@@ -1,6 +1,9 @@
 h1,h2,h3,h4,h5 {
 	margin: 0px;
 }
+a {
+	color: darkblue;
+}
 body {
 	font-family: Arial;
 }
@@ -19,10 +22,18 @@ header {
 }
 nav ul {
 	text-align: center;
+	background-color: black;
+	padding: 9px !important;
 }
 nav li {
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #aaa;
 	display: inline;
-	padding: 5px;
+}
+.nav + .nav {
+	margin-left: 10px;
 }
 ul.vanilla {
 	list-style: none;
