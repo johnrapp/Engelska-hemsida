@@ -1,0 +1,17 @@
+h1,h2,h3,h4,h5 {
+	margin: 0px;
+}
+body {
+	font-family: Arial;
+}
+header {
+	font-size: 2em;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+#container {
+	width: 800px;
+	margin: auto;
+}
