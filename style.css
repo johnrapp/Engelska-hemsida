@@ -10,9 +10,11 @@ body {
 header {
 	font-size: 2em;
 	background-color: black;
-	color: white;
 	text-align: center;
 	padding: 10px;
+}
+header a {
+	color: white;
 }
 #container {
 	width: 800px;
