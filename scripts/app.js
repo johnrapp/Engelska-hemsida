@@ -1,11 +1,8 @@
-var app = angular.module('app', ['ngRoute']);
-app.config(function($routeProvider) {
+angular.module('app', ['ngRoute'])
+.config(function($routeProvider) {
 	$routeProvider
 	.when('/', {
 		templateUrl: 'templates/start.html'
-	})
-	.when('/about', {
-		templateUrl: 'templates/about.html'
 	})
 	.when('/FAQ', {
 		templateUrl: 'templates/FAQ.html'
@@ -15,5 +12,10 @@ app.config(function($routeProvider) {
 	})
 	.otherwise({
 		redirectTo: '/'
+	});
+})
+.controller('currentCtrl', function($rootScope, $scope, $location) {
+	$rootScope.$on('$routeChangeSuccess', function(event, current) {
+		$scope.current = $location.url();
 	});
 });

@@ -1,52 +1,54 @@
-<html ng-app="app">
+<html data-ng-app="app">
+<!--data-ng-app används av libraryt "angular" som jag använder
+	för att ha olika sidor för att berätta vart applikationen börjar-->
 <head>
 	<title>Engelska uppgift</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,400italic,500italic,700,700italic,900,900italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
 	<script type="text/javascript" src="lib/angular.js"></script>
 	<script type="text/javascript" src="lib/angular-route.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
-	<script type="text/ng-template" id="templates/about.html">
-		ABOUT
-	</script>
 	<script type="text/ng-template" id="templates/FAQ.html">
 		FAQ
 	</script>
 	<script type="text/ng-template" id="templates/start.html">
-	<div>Today technology is a massive part of our everyday life. Just look around 
-	when you're on the bus, you'll defenitely see the majority of the people 
-	staring down on their phones or tablets. Because of this, people are going 
-	to have a greater knowledge about technology and we'll be able to take 
-	advantage of that in many different ways. One of the biggest positives 
-	about this is that it can be used in education.'</div>
+		<div>Today technology is a massive part of our everyday life. Just look around 
+		when you're on the bus, you'll defenitely see the majority of the people 
+		staring down on their phones or tablets. Because of this, people are going 
+		to have a greater knowledge about technology and we'll be able to take 
+		advantage of that in many different ways. One of the biggest positives 
+		about this is that it can be used in education.'</div>//'
 	</script>
 	<script type="text/ng-template" id="templates/history.html">
-	<div>HISTORY</div>
+		<div>HISTORY</div>
 	</script>
 
 </head>
-<body>
+<!--data-ng-controller används för att "berätta" för menyn vilken som är current och finns i app.js-->
+<body data-ng-controller="currentCtrl">
 	<header class="header-footer">
 		<a href="#/" class="vanilla"><h1>Education in the future</h1></a>
 	</header>
 	<nav>
 		<ul class="vanilla">
-			<a href="#/start" class="vanilla nav">
-				<li>Start</li>
+			<a href="#/" class="vanilla nav">
+				<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
+				<li data-ng-class="{current: current == '/'}">Start</li>
 			</a>
 			<a href="#/FAQ" class="vanilla nav">
-				<li>FAQ</li>
-			</a>
-			<a href="#/about" class="vanilla nav">
-				<li>About</li>
+				<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
 			</a>
 			<a href="#/history" class="vanilla nav">
-				<li>History</li>
+				<li data-ng-class="{current: current == '/history'}">History</li>
 			</a>
 		</ul>
 	</nav>
 	<div id="container">
-		<div id="content" ng-view></div>
-		<aside>ASDAOKSJD oiASjd JASODI ajSIdj ASOIJdo AS</aside>
+		<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
+		<div id="content" data-ng-view></div>
+
+		<aside>About</aside>
 	</div>
 	<footer class="header-footer">&copy; Axel Lindgren inc</footer>
 </body>

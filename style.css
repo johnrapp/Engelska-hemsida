@@ -5,11 +5,12 @@ a {
 	color: darkblue;
 }
 body {
-	font-family: Arial;
+	font-family: "Open Sans", sans-serif;
 	margin: 0px;
 }
 .header-footer {
-	background-color: black;
+	font-family: Roboto, sans-serif;
+	background-color: #BA55D3;
 	text-align: center;
 	padding: 10px;
 	color: white;
@@ -25,34 +26,40 @@ header a {
 }
 nav ul {
 	text-align: center;
-	background-color: black;
-	padding: 9px !important;
+	background-color: #BA55D3;
+	padding: 10px !important;
 }
 nav li {
-	padding: 10px;
+	padding: 9px;
 	padding-left: 30px;
 	padding-right: 30px;
-	background-color: #eee;
+	background-color: #d5d5d5;
 	display: inline;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom: 1px solid black;
 }
 .nav + .nav {
 	margin-left: 10px;
+}
+nav li.current {
+	background-color: #eee;
+	border-bottom: 1px solid #eee;
 }
 #container {
 	width: 1000px;
 	margin: auto;
 }
-#content {
-	width: 770px;
+#container > * {
 	padding: 10px;
 	background-color: #eee;
 	float: left;
 }
+#content {
+	width: 750px;
+}
 aside {
-	width: 180px;
-	padding: 10px;
-	background-color: #aaa;
-	float: left;
+	width: 200px;
 	margin-left: 10px;
 }
 ul.vanilla {
