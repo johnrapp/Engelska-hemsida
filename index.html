@@ -1,5 +1,5 @@
 <html data-ng-app="app">
-<!--data-ng-app används av libraryt "angular" som jag använder
+<!--data-ng-app används av javascriptbiblioteket "angular" som jag använder
 	för att ha olika sidor för att berätta vart applikationen börjar-->
 <head>
 	<meta charset="UTF-8">
@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="lib/angular.js"></script>
 	<script type="text/javascript" src="lib/angular-route.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
+
 	<script type="text/ng-template" id="templates/FAQ.html">
 		<ul>
 			<li>
@@ -18,7 +19,7 @@
 			</li>
 			<li>
 				Q: Who will the teachers be?<br>
-				A: The lectures of today is very general and doesn't help the students with their individual problems. In the future we need teachers that can diagnose what's wrong with the students and based on that knowledge make the lessons as productive as possible.
+				A: The lectures of today is very general and doesn't help the students with their individual problems. In the future we need teachers that can diagnose what's wrong with the students and based on that knowledge make the lessons as productive as possible.'
 			</li>
 		</ul>
 	</script>
@@ -33,7 +34,7 @@
 			technology and we'll be able to take advantage of that in many different ways. 
 			One of the biggest positives about the progress of technology is that we're going to 
 			be able to take advantage of that within education and the school in general in the future. 
-			This site is about the good possibilities and possible dangerous consequences of future technology.'
+			This site is about the good possibilities and possible dangerous consequences of future technology.
 		</div>
 	</script>
 	<script type="text/ng-template" id="templates/history.html">
@@ -51,11 +52,14 @@
 			We already have environmentally friendly computers'
 			</div>
 	</script>
-
-
 </head>
 <!--data-ng-controller används för att "berätta" för menyn vilken som är current och finns i app.js-->
 <body data-ng-controller="currentCtrl">
+	<!--Eftersom IE ibland blockar JavaScript-->
+	<noscript>
+		<div id="ns-background"></div>
+		<div id="ns-foreground">Please enable JavaScript on your browser before proceeding</div>
+	</noscript>
 	<div class="orange"></div>
 	<div id="upper">
 		<div id="upper-inner">

@@ -61,9 +61,9 @@ nav li.current {
 	border-bottom-right-radius: 5px;
 	
 	/*Genererad med http://css3gen.com/box-shadow/*/
-	-webkit-box-shadow: 0px 3px 15px 3px rgba(50, 50, 50, 0.6);
-	-moz-box-shadow: 0px 3px 15px 3px rgba(50, 50, 50, 0.6);
-	box-shadow: 0px 3px 15px 3px rgba(50, 50, 50, 0.6);
+-webkit-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.6);
+-moz-box-shadow:    0px 6px 12px 0px rgba(50, 50, 50, 0.6);
+box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.6);
 }
 .nav + .nav {
 	margin-left: 10px;
@@ -90,4 +90,21 @@ ul.vanilla {
 }
 a.vanilla {
 	text-decoration: none;
+}
+#ns-background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: black;
+	opacity: 0.7;
+}
+#ns-foreground {
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	padding: 50px;
+	left: 150px;
+	top: 50px;
+	font-weight: bold;
+	font-size: 1.5em;
 }

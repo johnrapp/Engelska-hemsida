@@ -18,7 +18,8 @@ angular.module('app', ['ngRoute'])
 	});
 })
 .controller('currentCtrl', function($rootScope, $scope, $location) {
-	$rootScope.$on('$routeChangeSuccess', function(event, current) {
+	$rootScope.$on('$routeChangeSuccess', function() {
 		$scope.current = $location.url();
 	});
 });
+
