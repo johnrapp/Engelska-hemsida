@@ -2,6 +2,7 @@
 <!--data-ng-app används av libraryt "angular" som jag använder
 	för att ha olika sidor för att berätta vart applikationen börjar-->
 <head>
+	<meta charset="UTF-8">
 	<title>Engelska uppgift</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,400italic,500italic,700,700italic,900,900italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -10,7 +11,16 @@
 	<script type="text/javascript" src="lib/angular-route.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
 	<script type="text/ng-template" id="templates/FAQ.html">
-		FAQ
+		<ul>
+			<li>
+				Q: Where will schools of the future be located?<br>
+				A: In the cloud, it’s not that the current education system is flawed. But the system we have now is based on examinations and punishment which prevents the student from enjoying the process of learning.
+			</li>
+			<li>
+				Q: Who will the teachers be?<br>
+				A: The lectures of today is very general and doesn’t help the students with their individual problems. In the future we need teachers that can diagnose what’s wrong with the students and based on that knowledge make the lessons as productive as possible.
+			</li>
+		</ul>
 	</script>
 	<script type="text/ng-template" id="templates/start.html">
 		<div>Today technology is a massive part of our everyday life. Just look around 
@@ -27,29 +37,35 @@
 </head>
 <!--data-ng-controller används för att "berätta" för menyn vilken som är current och finns i app.js-->
 <body data-ng-controller="currentCtrl">
-	<header class="header-footer">
-		<a href="#/" class="vanilla"><h1>Education in the future</h1></a>
-	</header>
-	<nav>
-		<ul class="vanilla">
-			<a href="#/" class="vanilla nav">
-				<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
-				<li data-ng-class="{current: current == '/'}">Start</li>
-			</a>
-			<a href="#/FAQ" class="vanilla nav">
-				<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
-			</a>
-			<a href="#/history" class="vanilla nav">
-				<li data-ng-class="{current: current == '/history'}">History</li>
-			</a>
-		</ul>
-	</nav>
+	<div class="orange"></div>
+	<div id="upper">
+		<div id="upper-inner">
+			<header class="header-footer">
+				<a href="#/" class="vanilla">Education in the future</a>
+			</header>
+			<nav>
+				<ul class="vanilla">
+					<a href="#/" class="vanilla nav">
+						<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
+						<li data-ng-class="{current: current == '/'}">Start</li>
+					</a>
+					<a href="#/FAQ" class="vanilla nav">
+						<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
+					</a>
+					<a href="#/history" class="vanilla nav">
+						<li data-ng-class="{current: current == '/history'}">History</li>
+					</a>
+				</ul>
+			</nav>
+		</div>
+	</div>
 	<div id="container">
 		<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
 		<div id="content" data-ng-view></div>
 
 		<aside>About</aside>
 	</div>
+	<div id="bottom" class="orange"></div>
 	<footer class="header-footer">&copy; Axel Lindgren inc</footer>
 </body>
 </html>
