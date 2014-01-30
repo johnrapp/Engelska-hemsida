@@ -10,6 +10,9 @@ app.config(function($routeProvider) {
 	.when('/FAQ', {
 		templateUrl: 'templates/FAQ.html'
 	})
+	.when('/history', {
+		templateUrl: 'templates/history.html'
+	})
 	.otherwise({
 		redirectTo: '/'
 	});
