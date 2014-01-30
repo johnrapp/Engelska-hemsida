@@ -1,17 +1,29 @@
-<html ng-app="app">
+<html data-ng-app="app">
+<!--data-ng-app används av libraryt "angular" som jag använder
+	för att ha olika sidor för att berätta vart applikationen börjar-->
 <head>
+	<meta charset="UTF-8">
 	<title>Engelska uppgift</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,400italic,500italic,700,700italic,900,900italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
 	<script type="text/javascript" src="lib/angular.js"></script>
 	<script type="text/javascript" src="lib/angular-route.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
-	<script type="text/ng-template" id="templates/about.html">
-		
-	</script>
-	<script type="text/ng-template" id="templates/QA.html">
-		
+	<script type="text/ng-template" id="templates/FAQ.html">
+		<ul>
+			<li>
+				Q: Where will schools of the future be located?<br>
+				A: In the cloud, it’s not that the current education system is flawed. But the system we have now is based on examinations and punishment which prevents the student from enjoying the process of learning.
+			</li>
+			<li>
+				Q: Who will the teachers be?<br>
+				A: The lectures of today is very general and doesn’t help the students with their individual problems. In the future we need teachers that can diagnose what’s wrong with the students and based on that knowledge make the lessons as productive as possible.
+			</li>
+		</ul>
 	</script>
 	<script type="text/ng-template" id="templates/start.html">
+<<<<<<< HEAD
 	<div>
 	<h1>Introduction</h1>
 	
@@ -23,16 +35,65 @@
 	  One of the biggest positives about the progress of technology is that we�re going to 
 	  be able to take advantage of that within education and the school in general in the future. 
 	  This site is about the good possibilities and possible dangerous consequences of future technology. </div>
+=======
+		<div>Today technology is a massive part of our everyday life. Just look around 
+		when you're on the bus, you'll defenitely see the majority of the people 
+		staring down on their phones or tablets. Because of this, people are going 
+		to have a greater knowledge about technology and we'll be able to take 
+		advantage of that in many different ways. One of the biggest positives 
+		about this is that it can be used in education.'</div>//'
+	</script>
+	<script type="text/ng-template" id="templates/history.html">
+		<div>HISTORY</div>
+	</script>
+		<script type="text/ng-template" id="templates/environment.html">
+		<div>Computers are a big part of today�s education, but what effects does it have on the environment?
+		Computers have a lot of environmentally harmful parts. A few examples are; lead, which damages a lot
+		of plants and animals, but also the human being. Mercury, which can spread in the water and damage animals,
+		especially fishes. Plastic, that can be found in all cables and on the computer case.
+		Plastic contains a lot of dangerous substances and when you burn down the computer parts, the substances
+		can leak as gases and is especially harmful for aquatic animals. The substances causes birth defects and
+		cancer. A bigger production of computers causes more damage to the environment. 
+		We already have environmentally friendly computers</div>
+>>>>>>> 067dc9495125ff399751ff1dc8e0687b583cc600
 	</script>
 
-</head>
-<body>
-	<header>
-		<h1>Education in the future</h1>
 
-	</header>
-	<div id="container">
-		<div ng-view></div>
+</head>
+<!--data-ng-controller används för att "berätta" för menyn vilken som är current och finns i app.js-->
+<body data-ng-controller="currentCtrl">
+	<div class="orange"></div>
+	<div id="upper">
+		<div id="upper-inner">
+			<header class="header-footer">
+				<a href="#/" class="vanilla">Education in the future</a>
+			</header>
+			<nav>
+				<ul class="vanilla">
+					<a href="#/" class="vanilla nav">
+						<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
+						<li data-ng-class="{current: current == '/'}">Start</li>
+					</a>
+					<a href="#/FAQ" class="vanilla nav">
+						<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
+					</a>
+					<a href="#/history" class="vanilla nav">
+						<li data-ng-class="{current: current == '/history'}">History</li>
+					</a>
+					<a href="#/environment" class="vanilla nav">
+						<li data-ng-class="{current: current == '/environment'}">Environment</li>
+					</a>
+				</ul>
+			</nav>
+		</div>
 	</div>
+	<div id="container">
+		<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
+		<div id="content" data-ng-view></div>
+
+		<aside>About</aside>
+	</div>
+	<div id="bottom" class="orange"></div>
+	<footer class="header-footer">&copy; Axel Lindgren inc</footer>
 </body>
 </html>
