@@ -10,6 +10,9 @@ angular.module('app', ['ngRoute'])
 	.when('/history', {
 		templateUrl: 'templates/history.html'
 	})
+	.when('/environment', {
+		templateUrl: 'templates/environment.html'
+	})
 	.otherwise({
 		redirectTo: '/'
 	});
