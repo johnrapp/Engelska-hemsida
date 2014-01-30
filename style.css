@@ -59,6 +59,11 @@ nav li.current {
 
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+	
+	/*Genererad med http://css3gen.com/box-shadow/*/
+	-webkit-box-shadow: 0px 3px 15px 3px rgba(50, 50, 50, 0.6);
+	-moz-box-shadow: 0px 3px 15px 3px rgba(50, 50, 50, 0.6);
+	box-shadow: 0px 3px 15px 3px rgba(50, 50, 50, 0.6);
 }
 .nav + .nav {
 	margin-left: 10px;
@@ -69,7 +74,6 @@ nav li.current {
 }
 #container > * {
 	padding: 10px;
-	background-color: #fafafa;
 	float: left;
 }
 #content {
