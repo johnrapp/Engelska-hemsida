@@ -1,17 +1,21 @@
 <html data-ng-app="app">
-<!--data-ng-app anvÃ¤nds av javascriptbiblioteket "angular" som jag anvÃ¤nder
-	fÃ¶r att ha olika sidor fÃ¶r att berÃ¤tta vart applikationen bÃ¶rjar-->
+<!--data-ng-app används av javascriptbiblioteket "angular" som jag använder
+	för att ha olika sidor för att berätta vart applikationen börjar-->
 <head>
 	<meta charset="UTF-8">
 	<title>Engelska uppgift</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,400italic,500italic,700,700italic,900,900italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+	<!--Angular och scriptfilen-->
 	<script type="text/javascript" src="lib/angular.js"></script>
 	<script type="text/javascript" src="lib/angular-route.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
 
+	<!--Det som står i dessa type="text/ng-template" kommer ersätta diven med data-ng-view-->
 	<script type="text/ng-template" id="templates/FAQ.html">
+		<h1>FAQ</h1>
+		
 		<ul>
 			<li>
 				Q: Where will schools of the future be located?<br>
@@ -38,36 +42,41 @@
 		</div>
 	</script>
 	<script type="text/ng-template" id="templates/history.html">
-		<div>The first electronic computer was made 1938, the man behind the creation of Z1 was Konrad Zuse. 
-		The computer was built in his parents’ living room and Zuse financed the computer himself. The computer 
-		itself wasn’t too much different from the computers today in the sense that it had almost all parts of a 
-		modern computer. It had memory, input-output devices, floating-point logic, micro sequences and control unit. 
-		But todays computers do of course have a lot more stuff and are more complicated. Zuse built Z2, Z3 and Z4 later on. 
-		This were the beginning of the computers, they’ve improved more and more throughout the years and become 
-		more and more common. Today we all know about computers. You can pretty much use them for anything, 
-		like gaming, studying, shopping or maybe interact with other people in social media. The transformation have been immense.
-		Hopefully we’ll be able to take advantage of the possibilities this is going to give us in the future. 
-		You can already today see Smart Boards* and computers being used in school as a tool for education. 
-		Some schools even use tablets in their educational process. The society have always been reflected 
-		of how the school have been, and that’s probably why education and the schools generally have been the subject of 
-		many, many debates through the history, that’s why it’s so interesting to people! An example of this is that during the 
-		twentieth century, availability of education, where something that could turn a poor country into a blooming industry. 
-		So the access to all these luxuries we have today is something that we should take advantage of and use as a platform to reach 
-		even further as a country. Because if you look at history, that really should pay off. We should use history not only to avoid 
-		making the same mistakes as in the past, but also to learn from what we did right.
+		<div>
+			<h1>History</h1>
+			<p>The first electronic computer was made 1938, the man behind the creation of Z1 was Konrad Zuse. 
+			The computer was built in his parents' living room and Zuse financed the computer himself. The computer 
+			itself wasn't too much different from the computers today in the sense that it had almost all parts of a 
+			modern computer. It had memory, input-output devices, floating-point logic, micro sequences and control unit. 
+			But todays computers do of course have a lot more stuff and are more complicated. Zuse built Z2, Z3 and Z4 later on. 
+			This were the beginning of the computers, they've improved more and more throughout the years and become 
+			more and more common. Today we all know about computers. You can pretty much use them for anything, 
+			like gaming, studying, shopping or maybe interact with other people in social media. The transformation have been immense.
+			Hopefully we'll be able to take advantage of the possibilities this is going to give us in the future. 
+			You can already today see Smart Boards* and computers being used in school as a tool for education. 
+			Some schools even use tablets in their educational process. The society have always been reflected 
+			of how the school have been, and that's probably why education and the schools generally have been the subject of 
+			many, many debates through the history, that's why it's so interesting to people! An example of this is that during the 
+			twentieth century, availability of education, where something that could turn a poor country into a blooming industry. 
+			So the access to all these luxuries we have today is something that we should take advantage of and use as a platform to reach 
+			even further as a country. Because if you look at history, that really should pay off. We should use history not only to avoid 
+			making the same mistakes as in the past, but also to learn from what we did right.</p>
 
-* A Smart Board is a display that’s connected to a computer, a projector projects the computers screen on the Smart Board, (usually on a wall) you use the board with a pen, your fingers, a stylus or any other device. They can be used for all kind of stuff.   
-</div>
+			<p>* A Smart Board is a display that's connected to a computer, a projector projects the computers screen on the Smart Board, (usually on a wall) you use the board with a pen, your fingers, a stylus or any other device. They can be used for all kind of stuff.</p>
+		</div>
 	</script>
 	<script type="text/ng-template" id="templates/environment.html">
 		<div>
-			Computers are a big part of today’s education, but what effects does it have on the environment?
-Computers have a lot of environmentally harmful parts. A few examples are; lead, which damages a lot of plants and animals, but also the human being. Mercury, which can spread in the water and damage animals, especially fishes. Plastic, that can be found in all cables and on the computer case. Plastic contains a lot of dangerous substances and when you burn down the computer parts, the substances can leak as gases and is especially harmful for aquatic animals. The substances causes birth defects and cancer. A bigger production of computers causes more damage to the environment. 
-We already have environmentally friendly computers but a new thing that is friendlier than computers, is SMART Boards. It’s like a computer but it; takes less space, is more environmentally friendly, it’s a lot easier for the teachers to teach and a lot funnier for the students to learn. A few schools have already tried it, and hopefully all schools will use it in the future. 
-			</div>
+			<h1>Environment</h1>
+			<p>Computers are a big part of today's education, but what effects does it have on the environment?</p>
+			
+			<p>Computers have a lot of environmentally harmful parts. A few examples are; lead, which damages a lot of plants and animals, but also the human being. Mercury, which can spread in the water and damage animals, especially fishes. Plastic, that can be found in all cables and on the computer case. Plastic contains a lot of dangerous substances and when you burn down the computer parts, the substances can leak as gases and is especially harmful for aquatic animals. The substances causes birth defects and cancer. A bigger production of computers causes more damage to the environment.</p>
+
+			<p>We already have environmentally friendly computers but a new thing that is friendlier than computers, is SMART Boards. It's like a computer but it; takes less space, is more environmentally friendly, it's a lot easier for the teachers to teach and a lot funnier for the students to learn. A few schools have already tried it, and hopefully all schools will use it in the future.</p>
+		</div>
 	</script>
 </head>
-<!--data-ng-controller anvÃ¤nds fÃ¶r att "berÃ¤tta" fÃ¶r menyn vilken som Ã¤r current och finns i app.js-->
+<!--data-ng-controller används för att "berätta" för menyn vilken som är current och finns i app.js-->
 <body data-ng-controller="currentCtrl">
 	<!--Eftersom IE ibland blockar JavaScript-->
 	<noscript>
@@ -78,14 +87,16 @@ We already have environmentally friendly computers but a new thing that is frien
 	<div id="upper">
 		<div id="upper-inner">
 			<header class="header-footer">
-				<!--Tagen lagligt ifrÃ¥n http://iconmonstr.com/g/?icon=iconmonstr-book-24-icon.png-->
-				<img src="res/tablet.png">
-				<a href="#/" class="vanilla">The future of education</a>
+				<!--Tagen lagligt ifrån http://iconmonstr.com/g/?icon=iconmonstr-book-24-icon.png-->
+				<a href="#/" class="vanilla">
+					<img src="res/tablet.png">
+					<span>The future of education</span>
+				</a>
 			</header>
 			<nav>
 				<ul class="vanilla">
 					<a href="#/" class="vanilla nav">
-						<!-- data-ng-class anvÃ¤nds fÃ¶r att lÃ¤gga pÃ¥ classen "current" om man Ã¤r inne pÃ¥ den sidan-->
+						<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
 						<li data-ng-class="{current: current == '/'}">Start</li>
 					</a>
 					<a href="#/FAQ" class="vanilla nav">
@@ -102,7 +113,7 @@ We already have environmentally friendly computers but a new thing that is frien
 		</div>
 	</div>
 	<div id="container">
-		<!--data-ng-view anvÃ¤nds fÃ¶r att visa vart de olika sidorna ska "lÃ¤ggas"-->
+		<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
 		<div id="content" data-ng-view></div>
 
 		<aside>
