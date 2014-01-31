@@ -1,5 +1,10 @@
-h1,h2,h3,h4,h5 {
+h2,h3,h4,h5, p {
 	margin: 0px;
+}
+h1 {
+	text-align: center;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
 }
 a {
 	color: inherit;
@@ -33,6 +38,7 @@ header {
 	font-size: 25px;
 	float: left;
 	font-weight: bold;
+	text-shadow: 4px 4px 2px rgba(50, 50, 50, .5)
 }
 footer {
 	font-size: 1.5em;
