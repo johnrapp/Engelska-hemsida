@@ -96,11 +96,7 @@ nav li.current {
 	width: 1000px;
 	margin: auto;
 }
-#float-container {
-	float: left;
-	background-color: #f8f8f8;
-}
-#float-container > .row {
+#container > .row {
 	padding: 10px;
 	float: left;
 }
@@ -110,6 +106,7 @@ nav li.current {
 }
 aside {
 	width: 210px;
+	background-color: #f2f2f2;
 }
 ul.vanilla {
 	list-style: none;
