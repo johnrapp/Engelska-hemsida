@@ -16,11 +16,12 @@ body {
 	margin: 0px;
 }
 .orange {
-	height: 7px;
+	height: 3px;
 	background-color: #EE6B33;
-}
-#bottom {
 	clear: both;
+}
+.orange.slim {
+	height: 1px;
 }
 #upper {
 	background-color: #636363;

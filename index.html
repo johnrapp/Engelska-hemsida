@@ -1,11 +1,13 @@
 <html data-ng-app="app">
 <!--data-ng-app används av javascriptbiblioteket "angular" som jag använder
-	för att ha olika sidor för att berätta vart applikationen börjar-->
+	för att ha olika sidor och berättar vart applikationen börjar-->
 <head>
 	<meta charset="UTF-8">
 	<title>Engelska uppgift</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--Typsnitt lagligt från google och min stilmall-->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,400italic,500italic,700,700italic,900,900italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!--Angular och scriptfilen-->
 	<script type="text/javascript" src="lib/angular.js"></script>
@@ -72,7 +74,7 @@
 			
 			<p>Computers have a lot of environmentally harmful parts. A few examples are; lead, which damages a lot of plants and animals, but also the human being. Mercury, which can spread in the water and damage animals, especially fishes. Plastic, that can be found in all cables and on the computer case. Plastic contains a lot of dangerous substances and when you burn down the computer parts, the substances can leak as gases and is especially harmful for aquatic animals. The substances causes birth defects and cancer. A bigger production of computers causes more damage to the environment.</p>
 
-			<p>We already have environmentally friendly computers but a new thing that is friendlier than computers, is SMART Boards. It's like a computer but it; takes less space, is more environmentally friendly, it's a lot easier for the teachers to teach and a lot funnier for the students to learn. A few schools have already tried it, and hopefully all schools will use it in the future.</p>
+			<p>We already have environmentally friendly computers but a new thing that is friendlier than computers, is SMART Boards. It's like a computer but it; takes less space, is more environmentally friendly, it's a lot easier for the teachers to teach and a lot funnier for the students to learn. A few schools have already tried it, and hopefully all schools will use it in the future.'</p>
 		</div>
 	</script>
 </head>
@@ -112,6 +114,8 @@
 			</nav>
 		</div>
 	</div>
+	<div class="orange slim"></div>
+
 	<div id="container">
 		<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
 		<div id="content" data-ng-view></div>
@@ -121,7 +125,8 @@
 			<p>We are a group of four members doing research about the future of education.</p> 
 		</aside>
 	</div>
-	<div id="bottom" class="orange"></div>
+	<div class="orange slim"></div>
 	<footer class="header-footer">&copy; Axel Lindgren inc</footer>
+	<div class="orange"></div>
 </body>
 </html>
