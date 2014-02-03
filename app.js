@@ -24,4 +24,3 @@ angular.module('app', ['ngRoute'])
 		$scope.current = $location.url();
 	});
 });
-

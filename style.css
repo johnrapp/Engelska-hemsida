@@ -11,6 +11,9 @@ p {
 a {
 	color: inherit;
 }
+li + li {
+	margin-top: 1em;
+}
 body {
 	font-family: "Open Sans", sans-serif;
 	margin: 0px;
@@ -49,8 +52,13 @@ footer {
 	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
-	clear: both;
 	background-color: #636363;
+}
+#footer {
+	width: 998px;
+	clear: both;
+	border-left: 1px solid #EE6B33;
+	border-right: 1px solid #EE6B33;
 }
 header img {
 	position: relative;
@@ -76,10 +84,10 @@ nav li.current {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	
-	/*Genererad med http://css3gen.com/box-shadow/*/
--webkit-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.6);
--moz-box-shadow:    0px 6px 12px 0px rgba(50, 50, 50, 0.6);
-box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.6);
+	/* Genererad med http://css3gen.com/box-shadow/ */
+	-webkit-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.6);
+	-moz-box-shadow:    0px 6px 12px 0px rgba(50, 50, 50, 0.6);
+	box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.6);
 }
 .nav + .nav {
 	margin-left: 10px;
@@ -88,16 +96,20 @@ box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.6);
 	width: 1000px;
 	margin: auto;
 }
-#container > * {
+#float-container {
+	float: left;
+	background-color: #f8f8f8;
+}
+#float-container > .row {
 	padding: 10px;
 	float: left;
 }
 #content {
 	width: 750px;
+	background-color: #fff;
 }
 aside {
-	width: 200px;
-	margin-left: 10px;
+	width: 210px;
 }
 ul.vanilla {
 	list-style: none;
