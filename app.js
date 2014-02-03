@@ -23,4 +23,16 @@ angular.module('app', ['ngRoute'])
 	$rootScope.$on('$routeChangeSuccess', function() {
 		$scope.current = $location.url();
 	});
+})
+/* Detta gör att om man sätter classen "term" och lägger in en förklaring för begreppet "data-explination" kommer förklaringen att visas
+	i en ruta när man för musen över texten */
+.directive('term', function() {
+	return {
+		restrict: 'EAC',
+		scope: {explination: '@'},
+		transclude: true,
+		replace: true,
+		/*Följande kommer byta ut elementet med strängen och lägga vad som står i elementet från början där det står data-ng-transclude*/
+		template: '<span><span data-ng-transclude></span><article class="explination" data-ng-bind="explination"></article></span>',
+	}
 });

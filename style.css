@@ -2,6 +2,7 @@ h1,h2,h3,h4,h5 {
 	margin: 0px;
 }
 h1 {
+	font-size: 1.75em;
 	text-align: center;
 }
 p {
@@ -55,10 +56,8 @@ footer {
 	background-color: #636363;
 }
 #footer {
-	width: 998px;
+	width: 1000px;
 	clear: both;
-	border-left: 1px solid #EE6B33;
-	border-right: 1px solid #EE6B33;
 }
 header img {
 	position: relative;
@@ -70,7 +69,7 @@ nav {
 	height: 30px;
 }
 nav li {
-	float: left;
+	float: right;
 	color: white;
 	padding: 7px;
 	padding-left: 15px;
@@ -85,9 +84,9 @@ nav li.current {
 	border-bottom-right-radius: 5px;
 	
 	/* Genererad med http://css3gen.com/box-shadow/ */
+	box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.6);
 	-webkit-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.6);
-	-moz-box-shadow:    0px 6px 12px 0px rgba(50, 50, 50, 0.6);
-	box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.6);
+	-moz-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.6);
 }
 .nav + .nav {
 	margin-left: 10px;
@@ -102,7 +101,6 @@ nav li.current {
 }
 #content {
 	width: 750px;
-	background-color: #fff;
 }
 aside {
 	width: 210px;
@@ -133,4 +131,22 @@ a.vanilla {
 	top: 50px;
 	font-weight: bold;
 	font-size: 1.5em;
+}
+
+.term {
+	color: #0000FE;
+}
+
+.explination {
+	max-width: 300px;
+	color: #fff;
+	background-color: #636363;
+	border: 1px solid #EE6B33;
+	padding: 15px;
+	border-radius: 5px;
+	position: absolute;
+	display: none;
+}
+.term:hover .explination{
+	display : inline;
 }
