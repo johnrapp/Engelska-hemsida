@@ -18,6 +18,7 @@ li + li {
 body {
 	font-family: "Open Sans", sans-serif;
 	margin: 0px;
+
 }
 .orange {
 	height: 3px;
@@ -148,11 +149,17 @@ a.vanilla {
 	display: inline;
 	opacity: 0;
 }
+
+.question {
+	background-color: #eee;
+}
+
 .question-inner {
-	color: #0000FE;
+	color: #000ffa;
 	cursor: pointer;
 }
 .answer {
+
 }
 .hidden {
 	display: none;
