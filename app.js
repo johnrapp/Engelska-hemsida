@@ -34,5 +34,15 @@ angular.module('app', ['ngRoute'])
 		replace: true,
 		/*Följande kommer byta ut elementet med strängen och lägga vad som står i elementet från början där det står data-ng-transclude*/
 		template: '<span><span data-ng-transclude></span><article class="explination" data-ng-bind="explination"></article></span>',
+		link: function link(scope, element, attrs) {
+			/*Jag gör detta för att centrera förklaringen*/
+			window.element = element;
+			var $term = element.find('span');
+			var $explination = element.find('article');
+			$explination.ready(function() {
+				$explination.css('margin-left', - $explination.outerWidth() / 2 - $term.width() / 2);
+				//$explination.css('margin-top', - $explination.outerHeight() / 2);
+			});
+		}
 	}
 });
