@@ -5,6 +5,9 @@ angular.module('app', ['ngRoute'])
 	.when('/', {
 		templateUrl: 'templates/start.html'
 	})
+	.when('/indepth', {
+		templateUrl: 'templates/FAQ.html'
+	})
 	.when('/FAQ', {
 		templateUrl: 'templates/FAQ.html'
 	})
@@ -38,6 +41,10 @@ angular.module('app', ['ngRoute'])
 			element.ready(function() {
 				var $term = element.find('span');
 				var $explination = element.find('article').addClass('hidden');
+				var calculateMargin = function() {
+					return - $explination.outerWidth() / 2 - $term.width() / 2;
+				}
+				$explination.css('margin-left', calculateMargin());
 
 				/*Visa förklaringen när man pekar med musen över elementet och animera opacity så den visas mer och mer*/
 				element.hover(function() {
@@ -48,8 +55,7 @@ angular.module('app', ['ngRoute'])
 
 					/*För att centrera förklaringen måste göras varje gång eftersom elementet inte alltid
 						är på den nuvarande sidan när sidan laddar in*/
-					$explination.css('margin-left', - $explination.outerWidth() / 2 - $term.width() / 2);
-					//$explination.css('margin-top', - $explination.outerHeight() / 2);
+					$explination.css('margin-left', calculateMargin);
 				},
 				function() {
 					$explination.addClass('hidden');

@@ -47,19 +47,16 @@
 		<article>
 			<h1>History</h1>
 			<p>The first electronic computer was made 1938, the man behind the creation of Z1 was Konrad Zuse. 
-			The computer was built in his parents’ living room and Zuse financed the computer himself. The computer 
+			The computer was built in his parents living room and Zuse financed the computer himself. The computer 
 			itself wasn’t too much different from the computers today in the sense that it had almost all parts of a 
 			modern computer. It had memory, input-output devices, floating-point logic, micro sequences and control unit. 
 			But todays computers do of course have a lot more stuff and are more complicated. Zuse built Z2, Z3 and Z4 later on. 
 			This were the beginning of the computers, they’ve improved more and more throughout the years and became 
 			more and more common. Today we all know about computers. You can pretty much use them for anything, 
-<<<<<<< HEAD
 			like gaming, studying, shopping or maybe interact with other people in social media. The transformation have been immense.<br>
-			Hopefully we'll be able to take advantage of the possibilities this is going to give us in the future. 
-=======
+			Hopefully we’ll be able to take advantage of the possibilities this is going to give us in the future. 
 			like gaming, studying, shopping or maybe interact with other people in social media. The transformation have been immense.
 			Hopefully we’ll be able to take advantage of the possibilities this is going to give us in the future. 
->>>>>>> a0913d063abcd96fb52aa60ea2ce8d8b8a637c1d
 			You can already today see 
 			<!--Det står hur detta funkar i app.js-->
 			<span class="term" data-explination="A Smart Board is a display that’s connected to a computer, a projector projects the computers screen on the Smart Board, (usually on a wall) you use the board with a pen, your fingers, a stylus or any other device. They can be used for all kind of stuff.">
@@ -76,7 +73,7 @@
 	<script type="text/ng-template" id="templates/FAQ.html">
 		<article>
 			<h1>FAQ</h1>
-			<ul class=vanilla>
+			<ul id="faq" class=vanilla>
 				<li>
 					<section class="question" data-answer="The future schools will probably be located in the cloud. It’s not that the current education system is flawed however it’s based on examinations and punishment which prevents the student from enjoying the process of learning.">
 					Where will the schools of the future be located?</section>
@@ -109,56 +106,61 @@
 		<div id="ns-background"></div>
 		<div id="ns-foreground">Please enable JavaScript on your browser before proceeding</div>
 	</noscript>
-	<div class="orange"></div>
-	<div id="upper">
-		<div id="upper-inner">
-			<header class="header-footer">
-				<!--Tagen lagligt ifrån http://iconmonstr.com/g/?icon=iconmonstr-book-24-icon.png-->
-				<a href="#/" class="vanilla">
-					<img src="res/tablet.png">
-					<span>The future of education</span>
-				</a>
-			</header>
-			<nav>
-				<ul class="vanilla">
-					<a href="#/FAQ" class="vanilla nav">
-						<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
-						<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
+	<div id="wrapper">
+		<div class="orange"></div>
+		<div id="upper">
+			<div id="upper-inner">
+				<header class="header-footer">
+					<!--Tagen lagligt ifrån http://iconmonstr.com/g/?icon=iconmonstr-book-24-icon.png-->
+					<a href="#/" class="vanilla">
+						<img src="res/tablet.png">
+						<span>The future of education</span>
 					</a>
-					<a href="#/history" class="vanilla nav">
-						<li data-ng-class="{current: current == '/history'}">History</li>
-					</a>
-					<a href="#/environment" class="vanilla nav">
-						<li data-ng-class="{current: current == '/environment'}">Environment</li>
-					</a>
-					<a href="#/" class="vanilla nav">
-						<li data-ng-class="{current: current == '/'}">Start</li>
-					</a>
-				</ul>
-			</nav>
+				</header>
+				<nav>
+					<ul class="vanilla">
+						<a href="#/FAQ" class="vanilla nav">
+							<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
+							<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
+						</a>
+						<a href="#/history" class="vanilla nav">
+							<li data-ng-class="{current: current == '/history'}">History</li>
+						</a>
+						<a href="#/environment" class="vanilla nav">
+							<li data-ng-class="{current: current == '/environment'}">Environment</li>
+						</a>
+						<a href="#/indepth" class="vanilla nav">
+							<li data-ng-class="{current: current == '/indepth'}">In depth</li>
+						</a>
+						<a href="#/" class="vanilla nav">
+							<li data-ng-class="{current: current == '/'}">Start</li>
+						</a>
+					</ul>
+				</nav>
+			</div>
 		</div>
-	</div>
-	<div class="orange slim"></div>
-	<div id="container">
-		<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
-		<div id="content" class="row" data-ng-view></div>
-		<aside class="row">
-			<h1>About us</h1>
-			<p>We are a group of students from 
-				<span class="term" data-explination="Värmdö Gymnasium is a Swedish highschool located in the outskirts of stockholm near the famous Erikson Globe.">
-					Värmdö Gymnasium</span> doing research about the future of education.</p>
-			<span>The group consists of the following members:</span>
-			<ul>
-				<li>John Rapp Farnes</li>
-				<li>David Torres</li>
-				<li>Max Sjödin</li>
-				<li>Anton Tystrand</li>
-			</ul>
-		</aside>
-		<div id="footer">
-			<div class="orange slim"></div>
-			<footer class="header-footer">&copy; Educational Researchers inc</footer>
-			<div class="orange"></div>
+		<div class="orange slim"></div>
+		<div id="container">
+			<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
+			<div id="content" class="row" data-ng-view></div>
+			<aside class="row">
+				<h1>About us</h1>
+				<p>We are a group of students from 
+					<span class="term" data-explination="Värmdö Gymnasium is a Swedish highschool located in the outskirts of stockholm near the famous Erikson Globe.">
+						Värmdö Gymnasium</span> doing research about the future of education.</p>
+				<span>The group consists of the following members:</span>
+				<ul>
+					<li>John Rapp Farnes</li>
+					<li>David Torres</li>
+					<li>Max Sjödin</li>
+					<li>Anton Tystrand</li>
+				</ul>
+			</aside>
+			<div id="footer">
+				<div class="orange slim"></div>
+				<footer class="header-footer">&copy; Educational Researchers inc</footer>
+				<div class="orange"></div>
+			</div>
 		</div>
 	</div>
 </body>
