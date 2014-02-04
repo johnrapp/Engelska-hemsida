@@ -33,7 +33,7 @@ angular.module('app', ['ngRoute'])
 		transclude: true,
 		replace: true,
 		/*Följande kommer byta ut elementet med strängen och lägga vad som står i elementet från början där det står data-ng-transclude*/
-		template: '<span><span data-ng-transclude></span><article class="explination" data-ng-bind="explination"></article></span>',
+		template: '<span><span data-ng-transclude></span><article class="explination">{{explination}}</article></span>',
 		link: function link(scope, element, attrs) {
 			element.ready(function() {
 				var $term = element.find('span');
@@ -55,6 +55,24 @@ angular.module('app', ['ngRoute'])
 					$explination.css('display', 'none');
 					$explination.css('opacity', '0');
 				});
+			});
+		}
+	}
+})
+.directive('question', function() {
+	return {
+		restrict: 'EAC',
+		scope: {answer: '@'},
+		transclude: true,
+		replace: true,
+		template: '<article><section class="question-inner" data-ng-transclude></section><section class="answer">{{answer}}</section></article>',
+		link: function link(scope, element, attrs) {
+			var $question = element.find('.question-inner');
+			var $answer = element.find('.answer');
+			window.element = element;
+			$answer.addClass('hidden');
+			$question.click(function() {
+				$answer.toggleClass('hidden')
 			});
 		}
 	}
