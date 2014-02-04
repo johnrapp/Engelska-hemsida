@@ -82,11 +82,9 @@ nav li {
 nav li.current {
 	color: inherit;
 	background-color: #EE6B33;
-	border-top-left-radius: -5px;
-
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	
+
 	/* Genererad med http://css3gen.com/box-shadow/ */
 	box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.6);
 	-webkit-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.6);
@@ -119,7 +117,7 @@ a.vanilla {
 	text-decoration: none;
 }
 #faq {
-	margin-top: 
+	margin-top: 0.5em;
 }
 #ns-background {
 	width: 100%;
@@ -145,7 +143,7 @@ a.vanilla {
 }
 
 .explination {
-	max-width: 300px;
+	max-width: 450px;
 	color: #fff;
 	background-color: #636363;
 	border: 1px solid #EE6B33;
@@ -155,16 +153,9 @@ a.vanilla {
 	display: inline;
 	opacity: 0;
 }
-
-.question {
-}
-
 .question-inner {
 	color: #000ffa;
 	cursor: pointer;
-}
-.answer {
-	padding-left: 0.75em;
 }
 .hidden {
 	display: none;

@@ -3,7 +3,7 @@ angular.module('app', ['ngRoute'])
 	//För att berätta vilka sidor som ska visa vilka ng/template sidor
 	$routeProvider
 	.when('/', {
-		templateUrl: 'templates/start.html'
+		templateUrl: 'templates/introduction.html'
 	})
 	.when('/indepth', {
 		templateUrl: 'templates/indepth.html'

@@ -1,6 +1,7 @@
+
+<html data-ng-app="app">
 <!--data-ng-app används av javascriptbiblioteket "angular" som jag använder
 	för att ha olika sidor och berättar vart applikationen börjar-->
-<html data-ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<title>Engelska uppgift</title>
@@ -14,88 +15,78 @@
 	<script type="text/javascript" src="lib/angular.js"></script>
 	<script type="text/javascript" src="lib/angular-route.js"></script>
 	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript" src="translationsCtrl.js"></script>
 
 	<!--Det som står i type="text/ng-template" kommer ersätta div:en med data-ng-view-->
-	<script type="text/ng-template" id="templates/start.html">
+	<script type="text/ng-template" id="templates/introduction.html">
 		<article>
-			<h1>Introduction</h1>
+			<h1>Introduktion</h1>
 			
-			<p>Todays technology is a massive part of our everyday life.
-			   Just look around when you're on the bus and you'll definitely see
-			   the majority of the people staring down at their phones or tablets. 
-			   Because of this, people are going to have a greater knowledge about 
-			   technology and we'll be able to take advantage of that in many different ways. 
-			   One of the biggest benefits about the progress of technology is that we're going to 
-			   be able to take advantage of that within education and the school in the future. 
-			   This site is about the good possibilities and possible dangerous consequences of future technology in education and schools.</p>
+			<p>Dagens teknologi är en stor del av våra liv. Titta runt dig nästa gång du sitter på bussen så kommer du definitivt se att majoritet stirrar ner på sin mobil eller platta. På grund av detta kommer folk att ha en bättre kunskap om tekniken som vi kommer kunna dra nytta av på så många olika sätt. En av de största fördelarna med teknikens framsteg är att vi kommer kunna dra nytta av det inom utbildning och skolan i framtiden. Den här sidan handlar om alla möjligheter och möjliga konsekvenser av framtidens teknologi inom utbildning och skolan.</p>
 		</article>
 	</script>
 	<script type="text/ng-template" id="templates/environment.html">
 		<article>
-			<h1>Environment</h1>
+			<h1>Miljö</h1>
 			<section>
-				<p>Computers are a big part of today’s education, but what effects does it have on the environment?</p>
-				<p>Computers have a lot of environmentally harmful parts. A few examples are; lead, which damages a lot of plants and animals, but also the human being. Mercury, which can spread in the water and damage animals, especially fishes. Plastic, that can be found in all cables and on the computer case. Plastic contains a lot of dangerous substances and when you burn down the computer parts, the substances can leak as gases and is especially harmful for aquatic animals. The substances causes birth defects and cancer. A bigger production of computers causes more damage to the environment.</p>
+				<p>Datorer är en stor del av dagens utbildning, men hur påverkar den miljön? Datorer har en mängd miljöfarliga delar. Några få exempel är:</p>
+				<ul>
+					<li>Bly, som skadar många djur och växter, men också människan.</li>
+					<li>Kvicksilver, som kan spridas i vatten och skada många djur, speciellt fiskar.</li>
+					<li>Plast, som finns i det mesta som skyddar datorn delar, till exempel alla kablar. Plast innehåller många farliga ämnen och när man bränner ner datordelarna, kan ämnena läcka ut som gaser och är då speciellt farliga för vattenlevande djur. Ämnena kan orsaka fosterskador och till och med cancer.  En större produktion av datorer, orsakar mer skada mot miljön.</li>
+				</ul>
+				<p>På grund av den stora användningen av datorer, har återvinning blivit allt viktigare. Nuförtiden, har i princip alla återvinningsstationer en del för all elektronik. Det är den bästa platsen för att slänga sin dator om man inte längre vill ha den.</p>
+
+				<p>Idag har vi miljövänliga datorer som blir allt vanligare, nämligen bärbara datorer. Dagens datorer behöver inte bytas ut efter tre år som de gamla datorerna behövde göra. Det betyder att dem räcker längre, och eftersom att bärbara datorer är energisnåla, är det en stor positiv skillnad för miljön, från de senaste tio åren. Men en ny sak som är mer miljövänlig än datorer, är
+				<span class="term" data-explination="Smart Boards är en skärm som är kopplad till en dator, en projektor visar datorns skärm på Smart Boarden, (vanligtvis på en vägg) man använder den med en penna, ett finger, en pekpenna eller dylikt. Man använder dem för alla mängder olika saker."> Smart Boards</span>
+				. Det är som en vanlig dator men; den tar mindre utrymme, är mer miljövänlig, det är mycket enklare för lärare att undervisa och det är mycket roligare för eleverna att lära sig. Ett antal skolor har redan börjat använda den, och förhoppningsvis kommer alla skolor att använda den i framtiden. </p>
 			</section>
-			<section>
-				<p>We already have environmentally friendly computers but a new thing that is friendlier than computers, is SMART Boards. It’s like a computer but it; takes less space, is more environmentally friendly, it’s a lot easier for the teachers to teach and a lot funnier for the students to learn. A few schools have already tried it, and hopefully all schools will use it in the future.</p>
-			</section>
+		</article>
+	</script>
+	<script type="text/ng-template" id="templates/indepth.html">
+		<article>
+			<h1>Fördjupning</h1>
+			<p>Datorer, plattor, telefoner, spelenheter, e-böcker och så vidare. Jag skulle kunna hålla på hela dagen. Mängden av olika teknologiska enheter vi använder i vardagen är galet. Dem har blivit vanligare och vanligare och håller konstant på att utvecklar nya produkter. Den takten som dessa produkter utvecklas är häpnadsväckande och vem vet var vi kommer vara om 20-30 år. Det är omöjligt att säga hur långt vi kommer ha kommit om 20 år men en sak som är säker är att vi kommer att ta fördel av processen. En av de största aspekterna är skolorna och utbildning. Idag finns det redan många saker som utnyttjas inom skolorna. Att köpa datorer till eleverna är något som har blivit väldigt normalt, många skolor gör det och jag tycker att det är bra. Det är inte billigt men datorerna är väldigt effektiva när det gäller skolarbete och det är ett väldigt bra verktyg.</p>
+
+			<p>Förhoppningsvis i framtiden, kommer elever som är hemma och sjuka, kunna göra arbete och kanske till och med prov hemifrån, det bör även finnas bra verktyg för lärare. Det här skulle göra allting mycket enklare och saker skulle kunna gå mycket smidigare. Att inte ta nytta av fördelarna och förmånerna av det här skulle vara otroligt dumt eftersom att det här är något som kan öka effektiviteten och det skulle förbättra oss som ett land.</p>
+
+			<p>Precis som med allt som vi gillar så finns det dåliga aspekter med det. När man jobbar med datorer hela dagarna så är det viktigt att tänka på sin arbetsplats. Ha en bra stol och försök att sitta “normalt”. Det är enkelt att få rygg och nacksmärtor på grund av problem med muskuloskeletala besvär. Att ta små pauser, som att gå till toaletten eller bara ställa sig upp och gå lite är något som skulle kunna hjälpa. De vanligaste problemen när man konstant jobbar med datorer förutom ergonomin är karpaltunnelsyndrom och datorseende syndrom. Karpaltunnelsyndrom är stressrelaterat och orsakas av repetarade rörelser, ofta handleden. Det leder till muskuloskeletala problem och smärtor. Datorseende syndrom är nånting som kan minska synförmågan, ge trötta ögon och suddigt seende.</p>
+
+			<p>Alla de här är seriösa problem om man blir drabbad av dem men alla kan bli undvikas tack vare vår ökade kunskap och erfarenhet i ämnet.</p>
 		</article>
 	</script>
 	<script type="text/ng-template" id="templates/history.html">
 		<article>
-			<h1>History</h1>
-			<p>The first electronic computer was made 1938, the man behind the creation of Z1 was Konrad Zuse. 
-			The computer was built in his parents’ living room and Zuse financed the computer himself. The computer 
-			itself wasn’t too much different from the computers today in the sense that it had almost all parts of a 
-			modern computer. It had memory, input-output devices, floating-point logic, micro sequences and control unit. 
-			But todays computers do of course have a lot more stuff and are more complicated. Zuse built Z2, Z3 and Z4 later on. 
-			This were the beginning of the computers, they’ve improved more and more throughout the years and became 
-			more and more common. Today we all know about computers. You can pretty much use them for anything, 
-<<<<<<< HEAD
-			like gaming, studying, shopping or maybe interact with other people in social media. The transformation have been immense.<br>
-			Hopefully we'll be able to take advantage of the possibilities this is going to give us in the future. 
-=======
-			like gaming, studying, shopping or maybe interact with other people in social media. The transformation have been immense.
-			Hopefully we’ll be able to take advantage of the possibilities this is going to give us in the future. 
->>>>>>> a0913d063abcd96fb52aa60ea2ce8d8b8a637c1d
-			You can already today see 
-			<!--Det står hur detta funkar i app.js-->
-			<span class="term" data-explination="A Smart Board is a display that’s connected to a computer, a projector projects the computers screen on the Smart Board, (usually on a wall) you use the board with a pen, your fingers, a stylus or any other device. They can be used for all kind of stuff.">
-			Smart boards</span> and computers being used in school as a tool for education. 
-			Some schools even use tablets in their educational process. The society have always been reflected 
-			of how the school have been, and that’s probably why education and the schools generally have been the subject of 
-			many, many debates through the history, that’s why it’s so interesting to people! An example of this is that during the 
-			twentieth century, availability of education, where something that could turn a poor country into a blooming industry. 
-			So the access to all these luxuries we have today is something that we should take advantage of and use as a platform to reach 
-			even further as a country. Because if you look at history, that really should pay off. We should use history not only to avoid 
-			making the same mistakes as in the past, but also to learn from what we did right.</p>
+			<h1>Historia</h1>
+			<p>Den första elektroniska datorn gjordes 1938, mannen bakom skapelsen av Z1 var Konrad Zuse. Datorn byggdes i hans föräldrars vardagsrum och Zuse finansierade datorn själv. Själva datorn var inte alltför olik dagens datorer i den aspekten att den hade nästan alla delar som finns i moderna datorer. Den hade minne,
+			<span class="term" data-explination="IO är en förkortning för input-output."> IO </span>
+			enheter, floating-point logik, mikrosekvenser och en styrenhet. Men dagens datorer har såklart många mer delar och är mer komplicerade. Zuse byggde Z2, Z3 och Z4 senare. Det här var början på alla datorer, de har utvecklats mer och mer under åren och blivit vanligare och vanligare. Idag vet vi alla om datorer. Man kan använda dem för i stort sett vad som helst, spela på dem, studera, shoppa eller interagera med andra människor på sociala medier. Förvandlingen har varit kolossal.</p>
+
+			<p>Förhoppningsvis så kommer vi kunna utnyttja möjligheterna som det här kommer att ge oss i framtiden. Man kan redan idag se Smart Boards och datorer användas i skolor som ett verktyg för utbildning. Vissa skolor använder till och med surfplattor i deras utbildningsprocess. Samhället har alltid varit reflekterat av hur skolorna har varit, och det är troligtvis anledningen till att skolan och utbildningen generellt har varit ett hett debattämne genom åren och det är därför som det är intressant för folk! Ett exempel på detta är att på 1900-talet så var det tillgången på jobb som kunde få ett fattigt land att bli en blommande industri. Så tillgången på all lyx vi har idag är något som vi ska ta vara på och använda som en plattform för att komma ännu längre som land. För om man tittar på historian och lär sig av den så borde det belöna sig. Vi bör använda historia inte bara för att undvika att begå samma misstag som förr i tiden, utan även för att lära sig av det man gjorde rätt.</p>
 		</article>
 	</script>
 	<script type="text/ng-template" id="templates/FAQ.html">
 		<article>
 			<h1>FAQ</h1>
-			<ul class=vanilla>
+			<ul id="faq" class=vanilla>
 				<li>
-					<section class="question" data-answer="The future schools will probably be located in the cloud. It’s not that the current education system is flawed however it’s based on examinations and punishment which prevents the student from enjoying the process of learning.">
-					Where will the schools of the future be located?</section>
+					<section class="question" data-answer="Framtidens skolor kommer att finnas i molnet. Det nuvarande systemet är baserat på examinationer och straff, vilka gör att eleverna inte tycker skolan blir rolig.">
+					Var kommer framtidens skolor att ligga?</section>
 				</li>
 				<li>
-					<section class="question" data-answer="The lectures of today are very general and does selden help the students with their individual problems. In the future there will be teachers that can create individual curriculums for each studend to make the lessons as productive as possible.">
-				Who will the teachers be?</section>
+					<section class="question" data-answer="Dagens föreläsningar är byggda för att funka för alla elever, vilket sällan hjälper eleverna med deras individuella problem. I framtiden kommer alla lärare skapa individuella läroplaner för varje elev för att göra lektionerna så produktiva som möjligt.">
+				Vilka kommer lärarna vara?</section>
 				</li>
 				<li>
-					<section class="question" data-answer="There will be companies that handles examinations, which you will need to visit when you want to take your exam. Those companies will follow certain standards and have top be approved by the government.">
-				How are the students going to take their final examinations when they can easily use the internet to cheat?</section>
+					<section class="question" data-answer="Det kommer att finnas företag som har hand om proven som man måste besöka för att skriva dem. Dessa företag måste följa vissa standarder och måste vara certifierade.">
+				Hur kommer eleverna att göra deras slutexamen när de kan fuska så enkelt?</section>
 				</li>
 				<li>
-					<section class="question" data-answer="Using computers won’t be very different from the current way of learning. Instead of sitting still with some paper and a pencil, you will use a computer for writing.">
-				If were going to use computers in our education in the future, is it going to be unhealthy for the students?</section>
+					<section class="question" data-answer="Att använda datorer kommer inte vara speciellt annorlunda från dagens system. Istället för att sitta stilla med papper och penna kommer man att skriva på datorer.">
+				Om vi kommer använda datorer i framtidens skolor, kommer detta vara en hälsorisk för eleverna?</section>
 				</li>
 				<li>
-					<section class="question" data-answer="The students will be able to communicate with the teachers using the internet. Through various communication programs the students can ask questions during of after lectures.">
-				What will the student-teacher relationship look like in the future when everything will be taught over the internet?</section>
+					<section class="question" data-answer="Studenten kommer kunna kommunicera med hjälp av internet. Genom  ett flertal kommunikations program kan studenten fråga frågor under eller efter  föreläsnigen">
+				Hur kommer relationen mellan lärare och elev se ut i framtiden när allt är utlärt över internet?</section>
 				</li>
 			</ul>
 			
@@ -109,56 +100,64 @@
 		<div id="ns-background"></div>
 		<div id="ns-foreground">Please enable JavaScript on your browser before proceeding</div>
 	</noscript>
-	<div class="orange"></div>
-	<div id="upper">
-		<div id="upper-inner">
-			<header class="header-footer">
-				<!--Tagen lagligt ifrån http://iconmonstr.com/g/?icon=iconmonstr-book-24-icon.png-->
-				<a href="#/" class="vanilla">
-					<img src="res/tablet.png">
-					<span>The future of education</span>
-				</a>
-			</header>
-			<nav>
-				<ul class="vanilla">
-					<a href="#/FAQ" class="vanilla nav">
-						<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
-						<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
+	<div id="wrapper">
+		<div class="orange"></div>
+		<div id="upper">
+			<div id="upper-inner">
+				<header class="header-footer">
+					<!--Tagen lagligt ifrån http://iconmonstr.com/g/?icon=iconmonstr-book-24-icon.png-->
+					<a href="#/" class="vanilla">
+						<img src="res/tablet.png">
+						<span>Framtidens utbildning</span>
 					</a>
-					<a href="#/history" class="vanilla nav">
-						<li data-ng-class="{current: current == '/history'}">History</li>
-					</a>
-					<a href="#/environment" class="vanilla nav">
-						<li data-ng-class="{current: current == '/environment'}">Environment</li>
-					</a>
-					<a href="#/" class="vanilla nav">
-						<li data-ng-class="{current: current == '/'}">Start</li>
-					</a>
-				</ul>
-			</nav>
+				</header>
+				<nav>
+					<ul class="vanilla">
+						<a href="index.html#/" class="vanilla nav">
+							<li id="flag"><img src="res/american_flag.png"></li>
+						</a>
+						<a href="#/FAQ" class="vanilla nav">
+							<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
+							<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
+						</a>
+						<a href="#/history" class="vanilla nav">
+							<li data-ng-class="{current: current == '/history'}">Historia</li>
+						</a>
+						<a href="#/environment" class="vanilla nav">
+							<li data-ng-class="{current: current == '/environment'}">Miljö</li>
+						</a>
+						<a href="#/indepth" class="vanilla nav">
+							<li data-ng-class="{current: current == '/indepth'}">Fördjupning</li>
+						</a>
+						<a href="#/" class="vanilla nav">
+							<li data-ng-class="{current: current == '/'}">Introduktion</li>
+						</a>
+					</ul>
+				</nav>
+			</div>
 		</div>
-	</div>
-	<div class="orange slim"></div>
-	<div id="container">
-		<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
-		<div id="content" class="row" data-ng-view></div>
-		<aside class="row">
-			<h1>About us</h1>
-			<p>We are a group of students from 
-				<span class="term" data-explination="Värmdö Gymnasium is a Swedish highschool located in the outskirts of stockholm near the famous Erikson Globe.">
-					Värmdö Gymnasium</span> doing research about the future of education.</p>
-			<span>The group consists of the following members:</span>
-			<ul>
-				<li>John Rapp Farnes</li>
-				<li>David Torres</li>
-				<li>Max Sjödin</li>
-				<li>Anton Tystrand</li>
-			</ul>
-		</aside>
-		<div id="footer">
-			<div class="orange slim"></div>
-			<footer class="header-footer">&copy; Educational Researchers inc</footer>
-			<div class="orange"></div>
+		<div class="orange slim"></div>
+		<div id="container">
+			<!--data-ng-view används för att visa vart de olika sidorna ska "läggas"-->
+			<div id="content" class="row" data-ng-view></div>
+			<aside class="row">
+				<h1>About us</h1>
+				<p>Vi är en grupp elever från 
+					<span class="term" data-explination="Värmdö Gymnasium är ett svenskt gymnasium som ligger i utkanten av Stockholm näta Globen.">
+						Värmdö Gymnasium</span> som forskar om framtidens utbildning.</p>
+				<span>Gruppen består av föjlande medlemmar:</span>
+				<ul>
+					<li>John Rapp Farnes</li>
+					<li>David Torres</li>
+					<li>Max Sjödin</li>
+					<li>Anton Tystrand</li>
+				</ul>
+			</aside>
+			<div id="footer">
+				<div class="orange slim"></div>
+				<footer class="header-footer">&copy; Utbildningsforskarna AB</footer>
+				<div class="orange"></div>
+			</div>
 		</div>
 	</div>
 </body>
