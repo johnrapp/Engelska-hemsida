@@ -134,7 +134,7 @@ a.vanilla {
 }
 
 .term {
-	color: #0000FE;
+	color: #EE6B33;
 }
 
 .explination {
@@ -147,4 +147,17 @@ a.vanilla {
 	position: absolute;
 	display: none;
 	opacity: 0;
+}
+
+.question-inner {
+	color: #0000FE;
+	cursor: pointer;
+}
+
+.answer {
+
+}
+
+.hidden {
+	display: none;
 }
