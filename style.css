@@ -159,7 +159,7 @@ a.vanilla {
 	cursor: pointer;
 }
 .answer {
-
+	margin-left: 0.75em;
 }
 .hidden {
 	display: none;
