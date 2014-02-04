@@ -148,16 +148,13 @@ a.vanilla {
 	display: none;
 	opacity: 0;
 }
-
 .question-inner {
 	color: #0000FE;
 	cursor: pointer;
 }
-
 .answer {
-
+	margin-left: 1em;
 }
-
 .hidden {
 	display: none;
 }
