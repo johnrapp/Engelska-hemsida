@@ -146,7 +146,5 @@ a.vanilla {
 	border-radius: 5px;
 	position: absolute;
 	display: none;
-}
-.term:hover .explination{
-	display : inline;
+	opacity: 0;
 }
