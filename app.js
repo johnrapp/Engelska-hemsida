@@ -6,7 +6,7 @@ angular.module('app', ['ngRoute'])
 		templateUrl: 'templates/start.html'
 	})
 	.when('/indepth', {
-		templateUrl: 'templates/FAQ.html'
+		templateUrl: 'templates/indepth.html'
 	})
 	.when('/FAQ', {
 		templateUrl: 'templates/FAQ.html'

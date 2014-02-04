@@ -3,7 +3,7 @@
 <html data-ng-app="app">
 <head>
 	<meta charset="UTF-8">
-	<title>Engelska uppgift</title>
+	<title>English assignment</title>
 
 	<!--Typsnitt lagligt från google och min stilmall-->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,500,400italic,500italic,700,700italic,900,900italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -41,6 +41,11 @@
 			<section>
 				<p>We already have environmentally friendly computers but a new thing that is friendlier than computers, is SMART Boards. It’s like a computer but it; takes less space, is more environmentally friendly, it’s a lot easier for the teachers to teach and a lot funnier for the students to learn. A few schools have already tried it, and hopefully all schools will use it in the future.</p>
 			</section>
+		</article>
+	</script>
+	<script type="text/ng-template" id="templates/indepth.html">
+		<article>
+		This is in depth
 		</article>
 	</script>
 	<script type="text/ng-template" id="templates/history.html">
@@ -119,6 +124,7 @@
 				</header>
 				<nav>
 					<ul class="vanilla">
+						<li id="flag"><img src="res/tablet.png"></li>
 						<a href="#/FAQ" class="vanilla nav">
 							<!-- data-ng-class används för att lägga på classen "current" om man är inne på den sidan-->
 							<li data-ng-class="{current: current == '/FAQ'}">FAQ</li>
