@@ -35,23 +35,26 @@ angular.module('app', ['ngRoute'])
 		/*Följande kommer byta ut elementet med strängen och lägga vad som står i elementet från början där det står data-ng-transclude*/
 		template: '<span><span data-ng-transclude></span><article class="explination" data-ng-bind="explination"></article></span>',
 		link: function link(scope, element, attrs) {
-			var $term = element.find('span');
-			var $explination = element.find('article');
-			/*Visa förklaringen när man pekar med musen över elementet och animera opacity så den visas mer och mer*/
-			element.hover(function() {
-				$explination.css('display', 'inline');
-				$explination.animate({
-					opacity: 1
-				}, 250);
-			},
-			function() {
-				$explination.css('display', 'none');
-				$explination.css('opacity', '0');
-			});
-			/*För att centrera förklaringen*/
-			$explination.ready(function() {
-				$explination.css('margin-left', - $explination.outerWidth() / 2 - $term.width() / 2);
-				//$explination.css('margin-top', - $explination.outerHeight() / 2);
+			element.ready(function() {
+				var $term = element.find('span');
+				var $explination = element.find('article');
+
+				/*Visa förklaringen när man pekar med musen över elementet och animera opacity så den visas mer och mer*/
+				element.hover(function() {
+					$explination.css('display', 'inline');
+					$explination.animate({
+						opacity: 1
+					});
+
+					/*För att centrera förklaringen måste göras varje gång eftersom elementet inte alltid
+						är på den nuvarande sidan när sidan laddar in*/
+					$explination.css('margin-left', - $explination.outerWidth() / 2 - $term.width() / 2);
+					//$explination.css('margin-top', - $explination.outerHeight() / 2);
+				},
+				function() {
+					$explination.css('display', 'none');
+					$explination.css('opacity', '0');
+				});
 			});
 		}
 	}
