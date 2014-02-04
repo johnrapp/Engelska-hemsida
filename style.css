@@ -13,7 +13,7 @@ a {
 	color: inherit;
 }
 li + li {
-	margin-top: 1em;
+	margin-top: 0.75em;
 }
 body {
 	font-family: "Open Sans", sans-serif;
@@ -145,7 +145,7 @@ a.vanilla {
 	padding: 15px;
 	border-radius: 5px;
 	position: absolute;
-	display: none;
+	display: inline;
 	opacity: 0;
 }
 .question-inner {
@@ -153,7 +153,6 @@ a.vanilla {
 	cursor: pointer;
 }
 .answer {
-	margin-left: 1em;
 }
 .hidden {
 	display: none;

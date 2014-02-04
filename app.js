@@ -37,11 +37,11 @@ angular.module('app', ['ngRoute'])
 		link: function link(scope, element, attrs) {
 			element.ready(function() {
 				var $term = element.find('span');
-				var $explination = element.find('article');
+				var $explination = element.find('article').addClass('hidden');
 
 				/*Visa förklaringen när man pekar med musen över elementet och animera opacity så den visas mer och mer*/
 				element.hover(function() {
-					$explination.css('display', 'inline');
+					$explination.removeClass('hidden');
 					$explination.animate({
 						opacity: 1
 					});
@@ -52,7 +52,7 @@ angular.module('app', ['ngRoute'])
 					//$explination.css('margin-top', - $explination.outerHeight() / 2);
 				},
 				function() {
-					$explination.css('display', 'none');
+					$explination.addClass('hidden');
 					$explination.css('opacity', '0');
 				});
 			});
