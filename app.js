@@ -65,13 +65,14 @@ angular.module('app', ['ngRoute'])
 		scope: {answer: '@'},
 		transclude: true,
 		replace: true,
+		/*Det som står i frågan kommer hamna i sectionen med data-ng-transclude och
+			svaret kommer hamna i sectionen med class="answer"*/
 		template: '<article><section class="question-inner" data-ng-transclude></section><section class="answer">{{answer}}</section></article>',
 		link: function link(scope, element, attrs) {
 			var $question = element.find('.question-inner');
-			var $answer = element.find('.answer');
-			window.element = element;
-			$answer.addClass('hidden');
+			var $answer = element.find('.answer').addClass('hidden');
 			$question.click(function() {
+				/*Växla classen hidden när man klickar på frågan*/
 				$answer.toggleClass('hidden')
 			});
 		}
